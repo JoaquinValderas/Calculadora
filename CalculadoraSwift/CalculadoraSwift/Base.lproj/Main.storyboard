@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculadoraSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-yY-Zkc">
+                                <rect key="frame" x="35" y="237.5" width="344" height="107.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107.67" id="gbc-PJ-GfK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC8-h2-B5b">
+                                <rect key="frame" x="35" y="141" width="344" height="71.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71.670000000000002" id="Mvv-FG-Ixw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DgY-ou-IuC">
+                                <rect key="frame" x="40" y="380" width="334" height="432"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gu4-sM-Nnm">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV9-x8-6Dg" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="AC">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ine-wK-JeT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S04-TT-xho" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="85.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvT-Zp-EM7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoM-eq-QIN" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="171" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="%">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vEH-kp-qDH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-E7-k76" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="256.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="PJH-j8-kyk"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="/">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vqo-ia-aiI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="bV9-x8-6Dg" firstAttribute="leading" secondItem="gu4-sM-Nnm" secondAttribute="leading" id="RER-v4-Qlo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zds-cP-pxH">
+                                        <rect key="frame" x="0.0" y="88" width="334" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyM-3p-AKf" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5G-uY-HZ7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3G-D3-fw6" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="85.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kej-QX-G33"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZe-BY-WqP" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="171" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOs-Y7-YAh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqn-Rc-GpB" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="256.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="vN4-Ka-pAH"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="x">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGZ-no-2Q1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-L3-L5S">
+                                        <rect key="frame" x="0.0" y="176" width="334" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-qD-omu" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWt-hs-MnW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsg-wi-2yd" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="85.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omu-Tt-R3c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ym-8a-vAu" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="171" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lLC-69-rOK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-pi-CYH" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="256.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="k08-KP-RMQ"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZfP-ws-6Cv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Gp-WY-POW">
+                                        <rect key="frame" x="0.0" y="264" width="334" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0X-8I-3yW" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NwL-EX-HEx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKs-xw-JBQ" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="85.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMf-n5-1Hz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCN-PE-bqj" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="171" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mY3-Eh-ePL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw6-ha-EXj" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="256.5" y="0.0" width="77.5" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="sV8-NO-Qyk"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eor-sC-enf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5oq-R8-N7P">
+                                        <rect key="frame" x="0.0" y="352" width="334" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-Ef-DwB" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="0"/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ZY-R6-imY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXB-VC-Zzv" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="114" y="0.0" width="106" height="80"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=","/>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tC5-nx-jPc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obz-Hr-LGv" customClass="botonredondo" customModule="CalculadoraSwift" customModuleProvider="target">
+                                                <rect key="frame" x="228" y="0.0" width="106" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="LdA-22-zvs"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="=">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pcb-Rk-Swg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DgY-ou-IuC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HBO-u0-2df"/>
+                            <constraint firstItem="wC8-h2-B5b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Jkc-L8-l4H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DgY-ou-IuC" secondAttribute="trailing" constant="40" id="Lhs-hK-qF2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wC8-h2-B5b" secondAttribute="trailing" constant="35" id="QEm-qN-2Vp"/>
+                            <constraint firstItem="9Z9-yY-Zkc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="SAt-aZ-lRx"/>
+                            <constraint firstItem="9Z9-yY-Zkc" firstAttribute="top" secondItem="wC8-h2-B5b" secondAttribute="bottom" constant="24.670000000000002" id="W2P-Kf-23m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Z9-yY-Zkc" secondAttribute="trailing" constant="35" id="WDf-SS-Gqs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DgY-ou-IuC" secondAttribute="bottom" constant="50" id="gy8-90-FNC"/>
+                            <constraint firstItem="DgY-ou-IuC" firstAttribute="top" secondItem="9Z9-yY-Zkc" secondAttribute="bottom" constant="35" id="roo-HY-nCJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Operaciones" destination="wC8-h2-B5b" id="Cbc-6x-45E"/>
+                        <outlet property="Resultado" destination="9Z9-yY-Zkc" id="Kjq-DD-1PS"/>
+                        <outlet property="ac" destination="bV9-x8-6Dg" id="RSz-Dm-rEv"/>
+                        <outlet property="backgroundView" destination="8bC-Xf-vdC" id="e1P-w8-8Ee"/>
+                        <outlet property="borrar" destination="S04-TT-xho" id="Rnb-ai-9EM"/>
+                        <outlet property="cinco" destination="Vsg-wi-2yd" id="WAw-yc-GK1"/>
+                        <outlet property="cuatro" destination="xp7-qD-omu" id="BFa-WT-TJo"/>
+                        <outlet property="dividir" destination="ifU-E7-k76" id="5uC-ih-zFK"/>
+                        <outlet property="dos" destination="h3G-D3-fw6" id="d7e-dd-YI7"/>
+                        <outlet property="igualBoton" destination="Obz-Hr-LGv" id="HSB-lP-Ex4"/>
+                        <outlet property="multiplicar" destination="xqn-Rc-GpB" id="sks-Vz-cEu"/>
+                        <outlet property="nueve" destination="UCN-PE-bqj" id="fra-LH-ckF"/>
+                        <outlet property="ocho" destination="aKs-xw-JBQ" id="wID-HO-TwQ"/>
+                        <outlet property="porcentaje" destination="DoM-eq-QIN" id="Vwm-Gd-lqK"/>
+                        <outlet property="punto" destination="zXB-VC-Zzv" id="c2N-Uv-xp5"/>
+                        <outlet property="restar" destination="Fxw-pi-CYH" id="iCM-pb-suJ"/>
+                        <outlet property="seis" destination="5ym-8a-vAu" id="bCP-Y2-bew"/>
+                        <outlet property="siete" destination="M0X-8I-3yW" id="TXZ-se-TCQ"/>
+                        <outlet property="sumar" destination="Nw6-ha-EXj" id="j4P-V3-7b2"/>
+                        <outlet property="tres" destination="bZe-BY-WqP" id="9CC-Yl-uDQ"/>
+                        <outlet property="uno" destination="KyM-3p-AKf" id="X4F-FR-CR1"/>
+                        <outlet property="zero" destination="DRa-Ef-DwB" id="H50-fI-DyJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
